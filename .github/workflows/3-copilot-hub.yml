@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
       - id: get_step
         run: echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
     outputs:
@@ -51,7 +51,7 @@ jobs:
     steps:
       # We'll need to check out the repository so that we can edit the README.
       - name: Checkout
-        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           fetch-depth: 0 # Let's get all the branches.
 
